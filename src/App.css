@@ -49,4 +49,11 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+div.main_theme {
+  background-color: #F4CE14;
+}
 
