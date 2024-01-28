@@ -45,4 +45,19 @@
  margin: 10px;
 }
 
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+div.main_theme {
+  background-color: #F4CE14;
+}
+
+.navbar-toggler-icon {
+  background-image: url("./appdata/hamburger_menu.svg") !important;
+}
 
