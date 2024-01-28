@@ -57,3 +57,7 @@ div.main_theme {
   background-color: #F4CE14;
 }
 
+.navbar-toggler-icon {
+  background-image: url("./appdata/hamburger_menu.svg") !important;
+}
+

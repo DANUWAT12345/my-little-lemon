@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavFeature() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="light">
+        <Navbar expand="lg" className="navbar navbar-light bg-light">
             <Container>
                 <Image src={Logo_Main} style={{ marginRight: '20px' }} />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,7 +25,7 @@ function NavFeature() {
                             <NavDropdown.Item href="blog">Blog</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="contact">
-                                Contact
+                                Contact Us
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
