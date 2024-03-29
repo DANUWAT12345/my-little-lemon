@@ -24,6 +24,7 @@ const deal_wording = "Special Deal"
 const menu_bt_wording = "Menu"
 const end_of_sale_wording = "This special deal end in Jan-12-2024"
 
+
 const cardData = [
     {
         id: 1,
@@ -103,10 +104,10 @@ function Homepage() {
                         <p className='text-justify'>{welcome_word}</p>
                         <div className='mt-5'>
                             <div className='mt-5'>
-                                <button type="button" className="btn btn-primary btn-lg">{botton_1}</button>
+                                <Button href="/my-reserve" type="button" className="btn btn-primary btn-lg">{botton_1}</Button>
                             </div>
                             <div className='mt-2'>
-                                <button type="button" className="btn btn-secondary btn-lg">{botton_2}</button>
+                                <Button href="/my-order" type="button" className="btn btn-secondary btn-lg">{botton_2}</Button>
                             </div>
                         </div>
                     </Col>
