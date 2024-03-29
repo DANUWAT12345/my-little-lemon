@@ -38,11 +38,11 @@
 }
 
 .main_color {
-  background-color: #495E57;
+  background-color: #495e57;
 }
 
 .Navbar_Style {
- margin: 10px;
+  margin: 10px;
 }
 
 body {
@@ -54,10 +54,27 @@ body {
 }
 
 div.main_theme {
-  background-color: #F4CE14;
+  background-color: #f4ce14;
 }
 
 .navbar-toggler-icon {
   background-image: url("./appdata/hamburger_menu.svg") !important;
 }
 
+@keyframes lightMove {
+  0% {
+    text-shadow: 0 0 5px red;
+  }
+  50% {
+    text-shadow: 0 0 15px red;
+  }
+  100% {
+    text-shadow: 0 0 5px red;
+  }
+}
+
+.light-moving {
+  animation: lightMove 3s infinite alternate;
+  color: red;
+  text-align: end;
+}

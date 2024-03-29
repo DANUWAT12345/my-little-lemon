@@ -19,26 +19,28 @@ const branding_location = "Chicago"
 const welcome_word = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam, justo nec vulputate convallis, velit quam vulputate turpis, sit amet malesuada orci lacus nec odio. Suspendisse potenti. Integer interdum ligula vitae sapien euismod, ut suscipit urna aliquet. Vivamus eget tellus ut justo efficitur feugiat id ac nisl. Curabitur vitae lacinia quam. Suspendisse potenti. Sed facilisis risus eu nisi tincidunt, eget eleifend odio interdum. Sed vitae fermentum libero. Nullam id mauris nec dui fermentum tincidunt. Sed gravida justo non nulla congue, ac egestas purus interdum."
 const caption = "We do food with love."
 const botton_1 = "Reserver A Table"
+const botton_2 = "Order Online"
 const deal_wording = "Special Deal"
 const menu_bt_wording = "Menu"
 const end_of_sale_wording = "This special deal end in Jan-12-2024"
 
+
 const cardData = [
     {
         id: 1,
-        title: "Tiramisu",
+        title: "Tiramisu (1.99$)",
         text: "a coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar and mascarpone, flavoured with cocoa.",
         imageSrc: tiramisu_image
     },
     {
         id: 2,
-        title: "Spaghetti Bolognese",
+        title: "Spaghetti (2.99$)",
         text: "Our best ever spaghetti bolognese is super easy and a true Italian classic with a meaty, chilli sauce.",
         imageSrc: spaghetti_image
     },
     {
         id: 3,
-        title: "Crostini",
+        title: "Crostini (1.59$)",
         text: "Who doesn't love golden, crisp crostini? Crostini is crusty bread brushed with olive oil, toasted in the oven or in the grill to perfection.",
         imageSrc: crostini_image
     },
@@ -48,7 +50,7 @@ const cardComponents = cardData.map(card => (
     <Col xs={12} sm={12} md={6} lg={4} xl={4} className="d-flex justify-content-center">
         <Card key={card.id} className="m-2" style={{ width: '18rem' }}>
             <Card.Img variant="top" src={card.imageSrc} style={{}} />
-            <Card.Body>
+            <Card.Body className='text-start'>
                 <Card.Title>{card.title}</Card.Title>
                 <Card.Text>{card.text}</Card.Text>
             </Card.Body>
@@ -75,7 +77,7 @@ function Testimony_Gen(testimonies) {
     return testimonies.map((testimony, index) => (
         <Row key={index} className='m-3'>
             <Col xs={12} sm={12} md={6} lg={6} xl={6} className='text-start mb-4'>
-                <Image src={testimony.imageSrc} fluid style={{width: '25vw'}}/>
+                <Image src={testimony.imageSrc} fluid style={{ width: '25vw' }} />
             </Col>
             <Col xs={12} sm={12} md={6} lg={6} xl={6} className="col align-self-center">
                 <div>
@@ -100,7 +102,14 @@ function Homepage() {
                         <h1>{branding_word}</h1>
                         <h5>{branding_location} </h5>
                         <p className='text-justify'>{welcome_word}</p>
-                        <button type="button" className="btn btn-primary btn-lg">{botton_1}</button>
+                        <div className='mt-5'>
+                            <div className='mt-5'>
+                                <Button href="/my-reserve" type="button" className="btn btn-primary btn-lg">{botton_1}</Button>
+                            </div>
+                            <div className='mt-2'>
+                                <Button href="/my-order" type="button" className="btn btn-secondary btn-lg">{botton_2}</Button>
+                            </div>
+                        </div>
                     </Col>
                     <Col className='text-start mt-4'>
                         <figure class="figure">
@@ -129,7 +138,9 @@ function Homepage() {
                         {cardComponents}
                     </Row>
                     <Row className='row justify-content-center m-4'>
-                        <p className='text-end'>{end_of_sale_wording}</p>
+                        <div className='light-moving'>
+                            <p style={{ color: 'red' }} className='text-end'>{end_of_sale_wording}</p>
+                        </div>
                     </Row>
                 </div>
             </div>
