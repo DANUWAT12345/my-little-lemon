@@ -78,3 +78,8 @@ div.main_theme {
   color: red;
   text-align: end;
 }
+
+.input-error,
+select.input-error {
+  border-color: crimson;
+}

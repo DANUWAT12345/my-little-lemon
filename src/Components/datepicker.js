@@ -57,7 +57,6 @@ export default function ClearableProp() {
         )}
       </Box>
       <div className="mt-3">
-        
           <Timeslotpicker/>
       </div>
     </LocalizationProvider>
