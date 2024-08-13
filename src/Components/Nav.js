@@ -19,9 +19,8 @@ function NavFeature() {
                         <Nav.Link href="login">Login</Nav.Link>
                         <NavDropdown title="Service" id="basic-nav-dropdown">
                             <NavDropdown.Item href="my-reserve">Reserve Table</NavDropdown.Item>
-                            <NavDropdown.Item href="my-order">
-                                Order Online
-                            </NavDropdown.Item>
+                            <NavDropdown.Item href="my-reserve-2">Reserve Table Slot</NavDropdown.Item>
+                            <NavDropdown.Item href="my-order">Order Online</NavDropdown.Item>
                             <NavDropdown.Item href="blog">Blog</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="contact">

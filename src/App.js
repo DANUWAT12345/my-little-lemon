@@ -11,6 +11,7 @@ import Footer from './Components/Footer.js';
 import Homepage from './page/Homepage.js';
 import Aboutpage from './page/Aboutpage.js';
 import Reservepage from './page/Reservepage.js';
+import Reservepage2 from './page/Reservepage2.js';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Homepage/>}></Route>
         <Route path="/" element={<Homepage/>}></Route>
         <Route path="/my-reserve" element={<Reservepage/>}></Route>
+        <Route path="/my-reserve-2" element={<Reservepage2/>}></Route>
         <Route path="/" element={<Homepage/>}></Route>
       </Routes>
       <Footer/>
