@@ -28,19 +28,19 @@ const end_of_sale_wording = "This special deal end in Jan-12-2024"
 const cardData = [
     {
         id: 1,
-        title: "Tiramisu (1.99$)",
+        title: "Tiramisu (70฿)",
         text: "a coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar and mascarpone, flavoured with cocoa.",
         imageSrc: tiramisu_image
     },
     {
         id: 2,
-        title: "Spaghetti (2.99$)",
+        title: "Spaghetti (100฿)",
         text: "Our best ever spaghetti bolognese is super easy and a true Italian classic with a meaty, chilli sauce.",
         imageSrc: spaghetti_image
     },
     {
         id: 3,
-        title: "Crostini (1.59$)",
+        title: "Crostini (60฿)",
         text: "Who doesn't love golden, crisp crostini? Crostini is crusty bread brushed with olive oil, toasted in the oven or in the grill to perfection.",
         imageSrc: crostini_image
     },
@@ -131,7 +131,19 @@ function Homepage() {
                             <h2>{deal_wording}</h2>
                         </Col>
                         <Col className='text-end m-3'>
-                            <Button type="submit" className='btn btn-dark btn-sm'>{menu_bt_wording}</Button>{' '}
+                            <Button 
+                                href="/menu" 
+                                size="lg"
+                                style={{
+                                    backgroundColor: '#495E57',
+                                    borderColor: '#495E57',
+                                    color: '#fff',
+                                    fontWeight: '600',
+                                    padding: '10px 30px'
+                                }}
+                            >
+                                {menu_bt_wording}
+                            </Button>
                         </Col>
                     </Row>
                     <Row className='row justify-content-start'>

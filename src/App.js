@@ -11,7 +11,12 @@ import Footer from './Components/Footer.js';
 import Homepage from './page/Homepage.js';
 import Aboutpage from './page/Aboutpage.js';
 import Reservepage from './page/Reservepage.js';
-import Reservepage2 from './page/Reservepage2.js';
+import Menupage from './page/Menupage.js';
+import Loginpage from './page/Loginpage.js';
+import Orderpage from './page/Orderpage.js';
+import Contactpage from './page/Contactpage.js';
+import Blogpage from './page/Blogpage.js';
+import Poweredby from './page/Poweredby.js';
 
 function App() {
   return (
@@ -24,8 +29,13 @@ function App() {
         <Route path="/" element={<Homepage/>}></Route>
         <Route path="/" element={<Homepage/>}></Route>
         <Route path="/" element={<Homepage/>}></Route>
+        <Route path="/menu" element={<Menupage/>}></Route>
+        <Route path="/login" element={<Loginpage/>}></Route>
         <Route path="/my-reserve" element={<Reservepage/>}></Route>
-        <Route path="/my-reserve-2" element={<Reservepage2/>}></Route>
+        <Route path="/my-order" element={<Orderpage/>}></Route>
+        <Route path="/contact" element={<Contactpage/>}></Route>
+        <Route path="/blog" element={<Blogpage/>}></Route>
+        <Route path="/powered-by" element={<Poweredby/>}></Route>
         <Route path="/" element={<Homepage/>}></Route>
       </Routes>
       <Footer/>
